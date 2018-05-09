@@ -26,6 +26,7 @@ print(highest_divider(600851475143))
 
 
 # ex.8
+def longestSubSequence(str1,str2):
   biggest_size = 0
   str = ""
   size = 0
@@ -48,3 +49,20 @@ def main():
   longestSubSequence("fddog","dddddog")
   
 main()
+
+# Ex.4
+
+translation=input("Type a text to be translated to Pig Latin: ")
+def pig_Latin(l):
+    a = l.lower()
+    b = l.split()
+    d = ""
+    for n in b:
+        first = n[0]
+        word = n[1:]
+        new_word=word+first+"ay "
+        d=d+new_word
+    return d
+
+
+print(pig_Latin(translation))
